@@ -2,16 +2,16 @@
   {
     "id": 1,
     "name": "Sneakers",
-    "image": "/src/assets/categories/sneakers.jpg"
+    "image": "/src/assets/categories/sneaker 5.jpg"
   },
   {
     "id": 2,
     "name": "Clothing",
-    "image": "/src/assets/categories/clothing.jpg"
+    "image": "/src/assets/categories/shirt 4.jpg"
   },
   {
     "id": 3,
     "name": "Accessories",
-    "image": "/src/assets/categories/accessories.jpg"
+    "image": "/src/assets/categories/watch 1.jpg"
   }
 ]

@@ -9,7 +9,7 @@ const Hero = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="px-2 py-1 text-[#F5F2EA] h-screen flex items-center justify-center"
+      className="px-4 py-1 text-[#F5F2EA] h-screen flex items-center justify-center rounded-xs"
     >
       <div className="flex flex-col items-center gap-10 px-10 py-8 text-center">
         <h1 className="text-3xl md:text-6xl tracking-wider">
