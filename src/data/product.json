@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Runner",
+    " price": 45000,
+    "image": "/src/assets/products/sneaker 1.jpg"
+  },
+  {
+    " id": 2,
+    "name": "Urban Sneaker",
+    "price": 57000,
+    "image": "/src/assets/products/sneaker 2.jpg"
+  },
+  {
+    " id": 3,
+    "name": "street Sneaker",
+    "price": 95000,
+    "image": "/src/assets/products/sneaker 3.jpg"
+  },
+  {
+    " id": 4,
+    "name": "London Sneaker",
+    "price": 55000,
+    "image": "/src/assets/products/sneaker 4.jpg"
+  },
+  {
+    " id": 5,
+    "name": "Sport Sneaker",
+    "price": 65000,
+    "image": "/src/assets/products/sneaker 5.jpg"
+  },
+  {
+    " id": 6,
+    "name": "Filex watch",
+    "price": 10000,
+    "image": "/src/assets/products/watch 1.jpg"
+  },
+  {
+    " id": 7,
+    "name": "Rolex watch",
+    "price": 75000,
+    "image": "/src/assets/products/watch 2.jpg"
+  },
+  {
+    " id": 8,
+    "name": "Dubai watch",
+    "price": 55000,
+    "image": "/src/assets/products/watch 3.jpg"
+  },
+  {
+    " id": 9,
+    "name": "Casual shirt",
+    "price": 45000,
+    "image": "/src/assets/products/shirt 1.jpg"
+  },
+  {
+    " id": 10,
+    "name": "Night shirt",
+    "price": 6000,
+    "image": "/src/assets/products/shirt 2.jpg"
+  },
+  {
+    " id": 11,
+    "name": "Street Shirt",
+    "price": 5000,
+    "image": "/src/assets/products/shirt 3.jpg"
+  },
+  {
+    " id": 12,
+    "name": "Hangout shirt",
+    "price": 7000,
+    "image": "/src/assets/products/shirt 4.jpg"
+  }
+]
