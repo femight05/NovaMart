@@ -1,3 +1,5 @@
+import { FaInstagram, FaFacebook, FaXTwitter } from "react-icons/fa6";
+
 const Footer = () => {
   return (
     <footer className="bg-gray-100 py-4">
@@ -26,6 +28,32 @@ const Footer = () => {
           </a>
           <a href="/returns" className="text-gray-600 hover:text-blue-900">
             Returns
+          </a>
+        </div>
+      </div>
+      <div>
+        <h2>Follow Us</h2>
+        <div className="flex justify-center gap-4">
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="text-gray-600 hover:text-blue-900" />
+          </a>
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook className="text-gray-600 hover:text-blue-900" />
+          </a>
+          <a
+            href="https://www.twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaXTwitter className="text-gray-600 hover:text-blue-900" />
           </a>
         </div>
       </div>
