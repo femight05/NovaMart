@@ -1,6 +1,6 @@
 const CategoryCard = ({ category }) => {
   return (
-    <div className="flex flex-col items-center justify-between py-4 rounded-xl gap-6 shadow-2xl shadow-black/60 ">
+    <div className="flex flex-col items-center cursor-pointer  justify-between py-4 rounded-xl gap-6 shadow-2xl shadow-black/60">
       <div className="bg-gray-200 h-48 ">
         <img
           src={category.image}

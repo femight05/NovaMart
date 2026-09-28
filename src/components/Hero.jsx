@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${hero})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${hero})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

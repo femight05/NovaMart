@@ -11,7 +11,7 @@ const ShopByCategory = () => {
       <p className="text-center tracking-wider text-xl md:text-2xl italic">
         Find What You Are Looking For
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-24">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-16 md:gap-24">
         {category.map((category) => (
           <CategoryCard
             key={category.id ?? category.name}
