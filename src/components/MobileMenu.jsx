@@ -15,7 +15,7 @@ const MobileMenu = () => {
       <a href="#" className="text-2xl hover:text-red-500">
         Contact
       </a>
-      <ShoppingCartIcon className="w-8 h-7 md:w-7 md:h-7" />
+      <ShoppingCartIcon className="w-8 h-7 md:w-7 md:h-7 hover:text-red-500" />
     </nav>
   );
 };
