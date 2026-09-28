@@ -2,6 +2,7 @@ import { ShoppingCartIcon, SearchIcon, ShoppingBag } from "lucide-react";
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -26,15 +27,15 @@ const Navbar = () => {
           />
         </div>
         <nav className="hidden md:flex gap-5 md:gap-10 md:text-2xl">
-          <a href="#" className="text-sm md:text-xl">
+          <Link to="/" className="text-sm md:text-xl">
             Home
-          </a>
-          <a href="#" className="text-sm md:text-xl">
+          </Link>
+          <Link to="/product" className="text-sm md:text-xl">
             Product
-          </a>
-          <a href="#" className="text-sm md:text-xl">
+          </Link>
+          <Link to="/contact" className="text-sm md:text-xl">
             Contact
-          </a>
+          </Link>
           <ShoppingCartIcon className="w-6 h-6 md:w-7 md:h-7" />
         </nav>
         <button
