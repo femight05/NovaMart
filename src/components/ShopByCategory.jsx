@@ -5,10 +5,10 @@ import Button from "./Button";
 const ShopByCategory = () => {
   return (
     <div className="px-4 flex flex-col items-center py-8 md:px-6 md:py-6 lg:px-16 lg:py-6 space-y-4 bg-gray-50/45">
-      <h1 className="text-center tracking-wider text-2xl md:text-3xl font-semibold">
+      <h1 className="text-center tracking-wider text-xl md:text-3xl font-semibold">
         SHOP BY CATEGORY
       </h1>
-      <p className="text-center tracking-wider text-xl md:text-2xl italic">
+      <p className="text-center tracking-wider md:text-2xl italic">
         Find What You Are Looking For
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-16 md:gap-24">
