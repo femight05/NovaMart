@@ -13,7 +13,7 @@ const Hero = () => {
     >
       <div className="flex flex-col items-center gap-10 px-10 py-8 text-center">
         <h1 className="text-3xl md:text-6xl tracking-wider">
-          Find Products you love.
+          Find Products You Love.
         </h1>
         <h2 className="text-2xl md:text-4xl italic tracking-widest">
           Simple. Affordable. Quality.
