@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const MobileMenu = () => {
   return (
-    <nav className="flex flex-col items-start gap-8 mt-2 px-5 md:gap-10 md:text-2xl backdrop-blur-3xl bg-white/70 rounded-2xl py-4 md:py-6">
+    <nav className="navbar-mobile-menu-enter flex flex-col items-start gap-8 mt-2 px-5 md:gap-10 md:text-2xl backdrop-blur-3xl bg-white/70 rounded-2xl py-4 md:py-6">
       <Link to="/" className="text-2xl hover:text-red-500">
         Home
       </Link>

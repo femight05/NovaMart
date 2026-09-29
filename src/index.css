@@ -1,5 +1,105 @@
 @import "tailwindcss";
 
+@keyframes navbar-drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes navbar-mark-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(-5px) rotate(-14deg) scale(0.85);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0) scale(1);
+  }
+}
+
+@keyframes navbar-mobile-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scaleY(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+.navbar-enter {
+  animation: navbar-drop-in 550ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+
+.navbar-brand-mark {
+  animation: navbar-mark-arrive 650ms 100ms cubic-bezier(0.2, 0.75, 0.25, 1)
+    both;
+}
+
+.navbar-brand-enter,
+.navbar-search-enter,
+.navbar-links-enter {
+  animation: navbar-drop-in 550ms 100ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+
+.navbar-links-enter > :nth-child(2) {
+  animation: navbar-drop-in 550ms 140ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+
+.navbar-links-enter > :nth-child(3) {
+  animation: navbar-drop-in 550ms 180ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+
+.navbar-link {
+  position: relative;
+  transition: color 180ms ease;
+}
+
+.navbar-link::after {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  background: #dc2626;
+  content: "";
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms ease;
+}
+
+.navbar-link:hover,
+.navbar-link:focus-visible {
+  color: #b91c1c;
+}
+
+.navbar-link:hover::after,
+.navbar-link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.navbar-menu-toggle {
+  transition: transform 180ms ease;
+}
+
+.navbar-menu-toggle:hover {
+  transform: rotate(6deg);
+}
+
+.navbar-mobile-menu-enter {
+  animation: navbar-mobile-reveal 280ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
+  transform-origin: top;
+}
+
 @keyframes contact-page-arrive {
   from {
     opacity: 0;
@@ -27,6 +127,27 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .navbar-enter,
+  .navbar-brand-enter,
+  .navbar-brand-mark,
+  .navbar-search-enter,
+  .navbar-links-enter,
+  .navbar-links-enter > :nth-child(2),
+  .navbar-links-enter > :nth-child(3),
+  .navbar-mobile-menu-enter {
+    animation: none;
+  }
+
+  .navbar-link,
+  .navbar-link::after,
+  .navbar-menu-toggle {
+    transition: none;
+  }
+
+  .navbar-menu-toggle:hover {
+    transform: none;
+  }
+
   .contact-page-enter > * {
     animation: none;
   }
