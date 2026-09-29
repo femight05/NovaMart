@@ -1,5 +1,6 @@
 import Button from "./Button";
 import hero from "../assets/hero.jpg";
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -18,7 +19,7 @@ const Hero = () => {
         <h2 className="text-2xl md:text-4xl italic tracking-widest">
           Simple. Affordable. Quality.
         </h2>
-        <Button text={"Show Now"} />
+        <Button text={"Show Now"} icon={<ArrowRight className="w-6 h-5" />} />
       </div>
     </section>
   );
