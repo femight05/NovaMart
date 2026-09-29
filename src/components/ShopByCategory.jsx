@@ -1,6 +1,7 @@
 import category from "../data/category.json";
 import CategoryCard from "./CategoryCard";
 import Button from "./Button";
+import { ArrowRight } from "lucide-react";
 
 const ShopByCategory = () => {
   return (
@@ -19,7 +20,10 @@ const ShopByCategory = () => {
           />
         ))}
       </div>
-      <Button text={"View All Products"} />
+      <Button
+        text={"View All Products"}
+        icon={<ArrowRight className="w-6 h-5" />}
+      />
     </div>
   );
 };
