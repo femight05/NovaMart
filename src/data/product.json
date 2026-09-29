@@ -19,7 +19,7 @@
   },
   {
     "id": 4,
-    "name": "London Sneaker",
+    "name": "Nike Sneaker",
     "price": 55000,
     "image": "/src/assets/products/sneaker 4.jpg"
   },
@@ -43,7 +43,7 @@
   },
   {
     "id": 8,
-    "name": "Dubai watch",
+    "name": "Fossil watch",
     "price": 55000,
     "image": "/src/assets/products/watch 3.jpg"
   },
