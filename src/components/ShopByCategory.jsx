@@ -5,14 +5,14 @@ import { ArrowRight } from "lucide-react";
 
 const ShopByCategory = () => {
   return (
-    <div className="px-4 flex flex-col items-center py-8 md:px-6 md:py-6 lg:px-16 lg:py-6 space-y-4 bg-gray-50/45">
-      <h1 className="text-center tracking-wider text-xl md:text-3xl font-semibold">
+    <div className="shop-category-section px-4 flex flex-col items-center py-8 md:px-6 md:py-6 lg:px-16 lg:py-6 space-y-4 bg-gray-50/45">
+      <h1 className="shop-category-heading text-center tracking-wider text-xl md:text-3xl font-semibold">
         SHOP BY CATEGORY
       </h1>
-      <p className="text-center tracking-wider md:text-2xl italic">
+      <p className="shop-category-subheading text-center tracking-wider md:text-2xl italic">
         Find What You Are Looking For
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-16 md:gap-24">
+      <div className="shop-category-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-16 md:gap-24">
         {category.map((category) => (
           <CategoryCard
             key={category.id ?? category.name}
@@ -20,10 +20,12 @@ const ShopByCategory = () => {
           />
         ))}
       </div>
-      <Button
-        text={"View All Products"}
-        icon={<ArrowRight className="w-6 h-5" />}
-      />
+      <div className="shop-category-cta">
+        <Button
+          text={"View All Products"}
+          icon={<ArrowRight className="w-6 h-5" />}
+        />
+      </div>
     </div>
   );
 };

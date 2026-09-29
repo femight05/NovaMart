@@ -2,12 +2,15 @@ import Button from "./Button";
 
 const ProductCard = ({ productImage, productName, productPrice }) => {
   return (
-    <section id="product-card" className="p-4 border rounded-xl">
-      <div className="bg-gray-200 h-48 ">
+    <section
+      id="product-card"
+      className="featured-product-card p-4 border rounded-xl"
+    >
+      <div className="bg-gray-200 h-48 overflow-hidden rounded-xl">
         <img
           src={productImage}
           alt={productName}
-          className="h-full w-full object-cover rounded-xl"
+          className="featured-product-image h-full w-full object-cover rounded-xl"
         />
       </div>
       <div className="p-4">
