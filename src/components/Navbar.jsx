@@ -36,7 +36,7 @@ const Navbar = () => {
           <Link to="/contact" className="navbar-link text-sm md:text-xl">
             Contact
           </Link>
-          <ShoppingCartIcon className="w-6 h-6 md:w-7 md:h-7" />
+          <ShoppingCartIcon className="w-6 h-6 md:w-7 md:h-7 navbar-link cursor-pointer" />
         </nav>
         <button
           className="navbar-menu-toggle md:hidden absolute top-4 right-4 z-50"
