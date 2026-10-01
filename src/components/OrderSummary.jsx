@@ -2,7 +2,7 @@ import Button from "../components/Button";
 
 const OrderSummary = ({ item }) => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 border-b py-2">
       <h1 className="text-xl text-center md:text-2xl">ORDER</h1>
       <div className="flex flex-col gap-2">
         <h2>Subtotal</h2>
