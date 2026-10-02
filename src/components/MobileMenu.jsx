@@ -1,7 +1,7 @@
 import { ShoppingCartIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const MobileMenu = () => {
+const MobileMenu = ({ itemCount }) => {
   return (
     <nav className="navbar-mobile-menu-enter flex flex-col items-start gap-8 mt-2 px-5 md:gap-10 md:text-2xl backdrop-blur-3xl bg-white/70 rounded-2xl py-4 md:py-6">
       <Link to="/" className="text-2xl hover:text-red-500">
@@ -16,7 +16,18 @@ const MobileMenu = () => {
       <Link to="/contact" className="text-2xl hover:text-red-500">
         Contact
       </Link>
-      <ShoppingCartIcon className="w-8 h-7 md:w-7 md:h-7 hover:text-red-500" />
+      <Link
+        to="/cart"
+        className="relative hover:text-red-500"
+        aria-label={`Cart, ${itemCount} items`}
+      >
+        <ShoppingCartIcon className="w-8 h-7 md:w-7 md:h-7" />
+        {itemCount > 0 && (
+          <span className="absolute -right-2 -top-2 rounded-full bg-red-500 px-1.5 text-xs text-white">
+            {itemCount}
+          </span>
+        )}
+      </Link>
     </nav>
   );
 };

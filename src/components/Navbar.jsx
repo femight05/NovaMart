@@ -3,9 +3,11 @@ import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useCart } from "../context/useCart";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { itemCount } = useCart();
 
   return (
     <section className="navbar-enter bg-gray-100 px-2 py-2">
@@ -36,7 +38,18 @@ const Navbar = () => {
           <Link to="/contact" className="navbar-link text-sm md:text-xl">
             Contact
           </Link>
-          <ShoppingCartIcon className="w-6 h-6 md:w-7 md:h-7 navbar-link cursor-pointer" />
+          <Link
+            to="/cart"
+            className="relative navbar-link"
+            aria-label={`Cart, ${itemCount} items`}
+          >
+            <ShoppingCartIcon className="w-6 h-6 md:w-7 md:h-7" />
+            {itemCount > 0 && (
+              <span className="absolute -right-2 -top-2 rounded-full bg-red-500 px-1.5 text-xs text-white">
+                {itemCount}
+              </span>
+            )}
+          </Link>
         </nav>
         <button
           className="navbar-menu-toggle md:hidden absolute top-4 right-4 z-50"
@@ -45,7 +58,7 @@ const Navbar = () => {
           {isMobileMenuOpen ? <X /> : <Menu />}
         </button>
       </div>
-      {isMobileMenuOpen && <MobileMenu />}
+      {isMobileMenuOpen && <MobileMenu itemCount={itemCount} />}
     </section>
   );
 };
