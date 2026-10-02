@@ -22,7 +22,7 @@ const ProductCard = ({ product }) => {
         <h3 className="text-lg font-bold">{product.name}</h3>
 
         <p className="text-xl font-bold">${product.price.toFixed(2)}</p>
-        <div className="mt-4 flex justify-content items-center gap-5">
+        <div className="mt-4 flex justify-content items-center gap-2 md:gap-5">
           <label
             htmlFor={`quantity-${product.id}`}
             className="text-sm font-medium text-center mt-3"
