@@ -22,9 +22,12 @@ const ProductCard = ({ product }) => {
         <h3 className="text-lg font-bold">{product.name}</h3>
 
         <p className="text-xl font-bold">${product.price.toFixed(2)}</p>
-        <div className="mt-4 flex items-center gap-3">
-          <label htmlFor={`quantity-${product.id}`} className="text-sm">
-            Qty
+        <div className="mt-4 flex justify-content items-center gap-5">
+          <label
+            htmlFor={`quantity-${product.id}`}
+            className="text-sm font-medium text-center mt-3"
+          >
+            Qty:
           </label>
           <input
             id={`quantity-${product.id}`}
@@ -34,7 +37,7 @@ const ProductCard = ({ product }) => {
             onChange={(event) =>
               setAddQuantity(Math.max(1, Number(event.target.value) || 1))
             }
-            className="w-16 rounded border px-2 py-1"
+            className="w-16 rounded mt-6 border px-2 py-1"
           />
           <Button text="Add" onClick={() => addToCart(product, addQuantity)} />
         </div>
