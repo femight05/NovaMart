@@ -16,7 +16,9 @@ const CartContent = () => {
       <h1 className="text-2xl md:text-4xl text-center py-10">Your Cart</h1>
       <div className="flex flex-col md:flex-row gap-30 px-20">
         <div className="flex flex-col gap-4 w-full md:w-1/2">
-          <h2 className="text-xl text-center md:text-2xl">Product</h2>
+          <h2 className="text-xl text-center md:text-2xl font-bold italic">
+            {cartItems.length > 1 ? "Products" : "Product"}
+          </h2>
           {cartItems.map((item) => (
             <CartItem
               key={item.id}
