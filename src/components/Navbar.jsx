@@ -58,7 +58,12 @@ const Navbar = () => {
           {isMobileMenuOpen ? <X /> : <Menu />}
         </button>
       </div>
-      {isMobileMenuOpen && <MobileMenu itemCount={itemCount} />}
+      {isMobileMenuOpen && (
+        <MobileMenu
+          itemCount={itemCount}
+          onNavigate={() => setIsMobileMenuOpen(false)}
+        />
+      )}
     </section>
   );
 };
