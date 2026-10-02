@@ -5,7 +5,7 @@ const EmptyCart = () => {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center h-screen text-black bg-gray-50/45">
       <div className="flex justify-center py-10">
         <ShoppingCart className="w-16 h-16" />
       </div>

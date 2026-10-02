@@ -12,7 +12,7 @@ const CartContent = () => {
   }
 
   return (
-    <div>
+    <div className="bg-gray-50/45">
       <h1 className="text-2xl md:text-4xl text-center py-10 font-semibold">
         Your Cart
       </h1>
