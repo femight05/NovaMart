@@ -13,7 +13,9 @@ const CartContent = () => {
 
   return (
     <div>
-      <h1 className="text-2xl md:text-4xl text-center py-10">Your Cart</h1>
+      <h1 className="text-2xl md:text-4xl text-center py-10 font-semibold">
+        Your Cart
+      </h1>
       <div className="flex flex-col md:flex-row gap-30 px-20">
         <div className="flex flex-col gap-4 w-full md:w-1/2">
           <h2 className="text-xl text-center md:text-2xl font-bold italic">
