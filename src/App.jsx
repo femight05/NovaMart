@@ -10,6 +10,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import ProductsPage from "./pages/ProductsPage";
 import ContactPage from "./pages/ContactPage";
 import CartPage from "./pages/CartPage";
+import FAQPage from "./pages/FAQPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
       <Route path="/product" element={<ProductsPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/cart" element={<CartPage />} />
+      <Route path="/faq" element={<FAQPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Route>,
   ),
