@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const ContactPage = () => {
   return (
     <section className="contact-page-enter flex flex-col items-center justify-center gap-5 px-4 py-5">
@@ -105,12 +107,12 @@ const ContactPage = () => {
         </h2>
         <p className="mt-2 text-sm leading-6 text-slate-600 md:text-base">
           Find quick answers on our{" "}
-          <a
-            href="/faq"
+          <Link
+            to="/faq"
             className="font-semibold text-red-600 underline decoration-red-300 underline-offset-4 transition hover:text-red-700 hover:decoration-red-600 focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2"
           >
             FAQ page
-          </a>
+          </Link>
           .
         </p>
       </section>

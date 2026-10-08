@@ -1,4 +1,4 @@
-import faqData from "../data/faq.json";
+import faqData from "../data/faq.js";
 import FAQItem from "../components/FAQItem";
 
 const FAQPage = () => {
