@@ -142,7 +142,7 @@ This will allow NovaMart to move beyond a frontend demonstration and become a fu
 Computer Science Student | Software Developer
 
 - GitHub: [@femight05](https://github.com/femight05)
-- X: [@yourusername](https://x.com/AkinpeluFemi5)
+- X: [@AkinpeluFemi5](https://x.com/AkinpeluFemi5)
 
 ## 📄 License
 
