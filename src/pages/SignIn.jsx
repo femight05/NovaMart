@@ -21,7 +21,11 @@ const SignIn = () => {
               <Sparkles aria-hidden="true" size={14} />
               WELCOME BACK
             </span>
-            <h2>Fresh looks.<br />Faster checkout.</h2>
+            <h2>
+              Fresh looks.
+              <br />
+              Faster checkout.
+            </h2>
             <p>
               Jump back in and pick up where you left off with your favorite
               essentials.
@@ -53,7 +57,7 @@ const SignIn = () => {
                 autoComplete="email"
                 id="email"
                 name="email"
-                placeholder="you@example.com"
+                placeholder="youremail@gmail.com"
                 required
                 type="email"
               />
