@@ -11,15 +11,19 @@ import ProductsPage from "./pages/ProductsPage";
 import ContactPage from "./pages/ContactPage";
 import CartPage from "./pages/CartPage";
 import FAQPage from "./pages/FAQPage";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<MainLayout />}>
       <Route index element={<HomePage />} />
       <Route path="/product" element={<ProductsPage />} />
-      <Route path="/contact" element={<ContactPage />} />
+      <Route path="/contact" element={<SignIn />} />
       <Route path="/cart" element={<CartPage />} />
       <Route path="/faq" element={<FAQPage />} />
+      <Route path="/signin" element={<SignIn />} />
+      <Route path="/signup" element={<SignUp />} />
       <Route path="*" element={<NotFoundPage />} />
     </Route>,
   ),
