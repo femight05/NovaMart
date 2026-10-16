@@ -4,13 +4,14 @@ import MobileMenu from "./MobileMenu";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useCart } from "../context/useCart";
+import UserMenu from "./UserMenu";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { itemCount } = useCart();
 
   return (
-    <section className="navbar-enter bg-gray-100 px-2 py-2">
+    <section className="navbar-enter relative z-50 bg-gray-100 px-2 py-2">
       <div className="py-3 px-5 flex flex-row justify-between md:justify-evenly gap-10 items-center rounded-2xl">
         <a href="/" className="navbar-brand-enter flex items-center gap-2">
           <ShoppingBag className="navbar-brand-mark h-5 w-5 md:h-7 md:w-7 text-blue-950" />
@@ -28,7 +29,7 @@ const Navbar = () => {
             className=" bg-white outline-none w-full h-full px-2 rounded-full text-sm md:text-base"
           />
         </div>
-        <nav className="navbar-links-enter hidden md:flex gap-5 md:gap-10 md:text-2xl">
+        <nav className="navbar-links-enter hidden md:flex md:justify-center md:items-center gap-5 md:gap-10 md:text-2xl">
           <Link to="/" className="navbar-link text-sm md:text-xl">
             Home
           </Link>
@@ -50,7 +51,9 @@ const Navbar = () => {
               </span>
             )}
           </Link>
+          <UserMenu />
         </nav>
+
         <button
           className="navbar-menu-toggle md:hidden absolute top-4 right-4 z-50"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
