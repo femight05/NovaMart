@@ -94,7 +94,7 @@ const ContactPage = () => {
             ></textarea>
             <button
               type="submit"
-              className="mt-1 inline-flex min-h-11 items-center justify-center rounded-md bg-red-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 active:bg-red-800"
+              className="mt-1 inline-flex min-h-11 items-center cursor-pointer justify-center rounded-md bg-red-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 active:bg-red-800"
             >
               Send Message
             </button>
