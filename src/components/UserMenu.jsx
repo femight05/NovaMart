@@ -6,8 +6,8 @@ const UserMenu = ({ details = {} }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const triggerRef = useRef(null);
-  const name = details.name || "NovaMart shopper";
-  const email = details.email || "Welcome back";
+  const name = details?.name || "NovaMart shopper";
+  const email = details?.email || "Welcome back";
 
   useEffect(() => {
     if (!isMenuOpen) return undefined;
@@ -39,7 +39,7 @@ const UserMenu = ({ details = {} }) => {
         ref={triggerRef}
         type="button"
         onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
-        aria-label="Open user menu"
+        aria-label={isMenuOpen ? "Close user menu" : "Open user menu"}
         aria-haspopup="true"
         aria-expanded={isMenuOpen}
         aria-controls="user-menu"
