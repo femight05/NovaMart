@@ -1,5 +1,6 @@
 import { ArrowRight, ShieldCheck, ShoppingBag, Sparkles } from "lucide-react";
 import sneakerImage from "../assets/products/sneaker 5.jpg";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   return (
@@ -21,10 +22,13 @@ const SignUp = () => {
               <Sparkles aria-hidden="true" size={14} />
               YOUR STYLE, YOUR WAY
             </span>
-            <h2>Good finds.<br />Great feeling.</h2>
+            <h2>
+              Good finds.
+              <br />
+              Great feeling.
+            </h2>
             <p>
-              Discover the pieces you love and make every day a little more
-              you.
+              Discover the pieces you love and make every day a little more you.
             </p>
           </div>
 
@@ -117,7 +121,9 @@ const SignUp = () => {
 
           <div className="signup-login-prompt">
             <span>Already have an account?</span>
-            <button type="button">Sign in</button>
+            <Link to="/signin">
+              <button type="button">Sign in</button>
+            </Link>
           </div>
           <p className="signup-terms">
             By creating an account, you agree to our terms and privacy policy.

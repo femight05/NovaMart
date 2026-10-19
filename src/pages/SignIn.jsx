@@ -1,5 +1,6 @@
 import { ArrowRight, LockKeyhole, ShoppingBag, Sparkles } from "lucide-react";
 import sneakerImage from "../assets/products/sneaker 5.jpg";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   return (
@@ -83,7 +84,9 @@ const SignIn = () => {
 
           <div className="signup-login-prompt">
             <span>New to NovaMart?</span>
-            <button type="button">Create account</button>
+            <Link to="/signup">
+              <button type="button">Create account</button>
+            </Link>
           </div>
           <p className="signup-terms">
             Need help accessing your account? Contact our support team.

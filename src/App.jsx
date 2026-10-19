@@ -24,7 +24,6 @@ const router = createBrowserRouter(
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/faq" element={<FAQPage />} />
-        <Route path="/signup" element={<SignUp />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
       <Route element={<SignInLayout />}>
