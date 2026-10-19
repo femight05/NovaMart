@@ -51,7 +51,12 @@ const Navbar = () => {
               </span>
             )}
           </Link>
-          <UserMenu />
+          <UserMenu
+            details={{
+              name: "Oluwafemi Akinpelu",
+              email: "akinpelufemi@gmail.com",
+            }}
+          />
         </nav>
 
         <button

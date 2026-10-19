@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { ChevronRight, LogOut, Package, UserRound } from "lucide-react";
 import Button from "./Button";
 
@@ -50,9 +51,9 @@ const UserMenu = ({ details = {} }) => {
       {isMenuOpen && (
         <div
           id="user-menu"
-          className="absolute right-0 top-full z-[60] mt-3 w-72 overflow-hidden rounded-2xl border border-slate-200 bg-white text-sm shadow-[0_20px_50px_rgba(15,23,42,0.2)] ring-1 ring-black/5"
+          className="absolute right-0 top-full z-60 mt-3 w-72 overflow-hidden rounded-2xl border border-slate-200 bg-white text-sm shadow-[0_20px_50px_rgba(15,23,42,0.2)] ring-1 ring-black/5"
         >
-          <div className="bg-gradient-to-br from-blue-950 via-blue-900 to-slate-800 px-5 py-4 text-white">
+          <div className="bg-linear-to-br from-blue-950 via-blue-900 to-slate-800 px-5 py-4 text-white">
             <p className="font-semibold">{name}</p>
             <p className="mt-1 truncate text-xs text-blue-100/80">{email}</p>
           </div>
@@ -68,13 +69,13 @@ const UserMenu = ({ details = {} }) => {
               <ChevronRight className="ml-auto h-4 w-4 text-slate-400" />
             </li>
           </ul>
-          <div className="border-t border-slate-100 p-2">
+          <Link to="/signin" className="border-t border-slate-100 p-2">
             <Button
               text="Log Out"
               icon={<LogOut className="h-4 w-4" />}
               onClick={() => setIsMenuOpen(false)}
             />
-          </div>
+          </Link>
         </div>
       )}
     </div>
