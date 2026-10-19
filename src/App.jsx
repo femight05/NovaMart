@@ -13,19 +13,25 @@ import CartPage from "./pages/CartPage";
 import FAQPage from "./pages/FAQPage";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import SignInLayout from "./layout/SignInLayout";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<MainLayout />}>
-      <Route index element={<HomePage />} />
-      <Route path="/product" element={<ProductsPage />} />
-      <Route path="/contact" element={<ContactPage />} />
-      <Route path="/cart" element={<CartPage />} />
-      <Route path="/faq" element={<FAQPage />} />
-      <Route path="/signin" element={<SignIn />} />
-      <Route path="/signup" element={<SignUp />} />
-      <Route path="*" element={<NotFoundPage />} />
-    </Route>,
+    <>
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<HomePage />} />
+        <Route path="/product" element={<ProductsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/faq" element={<FAQPage />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Route>
+      <Route element={<SignInLayout />}>
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Route>
+    </>,
   ),
 );
 
